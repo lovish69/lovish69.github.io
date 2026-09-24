@@ -1,0 +1,14 @@
+{
+  "name": "lovish-dark-observatory",
+  "version": "3.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node source/build.cjs"
+  },
+  "dependencies": {
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

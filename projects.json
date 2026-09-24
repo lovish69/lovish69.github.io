@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Kubernetes, minus the nodes.",
+    "label": "AWS EKS · Fargate",
+    "repo": "2048-app-deploy-ingress",
+    "category": "cloud",
+    "desc": "A containerized 2048 game deployed to Amazon EKS with Fargate, ingress-based external access, and IAM/OIDC configuration for service-account permissions.",
+    "tags": [
+      "AWS EKS",
+      "Fargate",
+      "Ingress",
+      "IAM / OIDC"
+    ],
+    "nodes": [
+      "Ingress",
+      "EKS",
+      "Fargate"
+    ],
+    "tone": "amber",
+    "detail": {
+      "focus": "Explore container delivery on managed Kubernetes without maintaining EC2 worker nodes.",
+      "steps": [
+        "Deploy a containerized 2048 application to Amazon EKS.",
+        "Use Fargate profiles for pod compute.",
+        "Configure ingress and load-balancer access.",
+        "Associate IAM permissions with service accounts through OIDC."
+      ],
+      "learn": "Brings together workload deployment, external routing, and AWS identity configuration.",
+      "scope": "Hands-on AWS deployment project; no uptime or cost-savings claim is made."
+    }
+  },
+  {
+    "title": "A blueprint for the cloud.",
+    "label": "AWS infrastructure · CI/CD",
+    "repo": "jenkins-terraform-k8s",
+    "category": "cloud delivery",
+    "desc": "An end-to-end infrastructure pipeline with Jenkins on EC2, Terraform-provisioned EKS, and an NGINX deployment using Kubernetes manifests.",
+    "tags": [
+      "AWS EKS",
+      "Terraform",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "nodes": [
+      "GitHub",
+      "Jenkins",
+      "EKS"
+    ],
+    "tone": "",
+    "detail": {
+      "focus": "Turn repeatable AWS infrastructure provisioning into a version-controlled pipeline.",
+      "steps": [
+        "Define EC2, VPC, and EKS resources in Terraform.",
+        "Host Jenkins on EC2 and connect the repository.",
+        "Store Terraform state in S3.",
+        "Run provisioning stages and deploy an NGINX workload."
+      ],
+      "learn": "Connects infrastructure definitions, pipeline orchestration, and Kubernetes deployment.",
+      "scope": "Repository includes setup screenshots and troubleshooting notes. Quantified performance claims are intentionally omitted."
+    }
+  },
+  {
+    "title": "See beyond the deployment.",
+    "label": "GitOps · Observability",
+    "repo": "observability-project",
+    "category": "observability delivery",
+    "desc": "A containerized website delivered through Argo CD, with Prometheus and Grafana dashboards to explore pod-level CPU and memory metrics.",
+    "tags": [
+      "Argo CD",
+      "Prometheus",
+      "Grafana",
+      "Helm"
+    ],
+    "nodes": [
+      "Argo CD",
+      "K8s",
+      "Grafana"
+    ],
+    "tone": "blue",
+    "detail": {
+      "focus": "Connect GitOps delivery to visibility into Kubernetes workload behavior.",
+      "steps": [
+        "Build a Docker image and publish it to Docker Hub.",
+        "Sync Kubernetes manifests through Argo CD.",
+        "Install kube-prometheus-stack using Helm.",
+        "Explore pod CPU and memory metrics with PromQL and Grafana."
+      ],
+      "learn": "Demonstrates the relationship between resource configuration, metric collection, and dashboard queries.",
+      "scope": "Documented learning project; diagrams and animations on this portfolio are not live telemetry."
+    }
+  },
+  {
+    "title": "Security is part of the pipeline.",
+    "label": "DevSecOps · Automation",
+    "repo": "DevSecOps-Zomato",
+    "category": "delivery observability",
+    "desc": "A Jenkins-driven delivery workflow combining code quality checks, dependency and container scanning, GitOps deployment, and monitoring.",
+    "tags": [
+      "Jenkins",
+      "SonarQube",
+      "Trivy",
+      "Argo CD"
+    ],
+    "nodes": [
+      "Code",
+      "Scan",
+      "Deploy"
+    ],
+    "tone": "purple",
+    "detail": {
+      "focus": "Integrate code quality, dependency analysis, and image scanning into delivery.",
+      "steps": [
+        "Orchestrate the workflow in Jenkins.",
+        "Check code with SonarQube and dependencies with OWASP Dependency-Check.",
+        "Scan images using Trivy and Docker Scout.",
+        "Deploy with Helm and Argo CD; explore Prometheus and Grafana monitoring."
+      ],
+      "learn": "Shows how security checks fit into a broader build-and-release workflow.",
+      "scope": "A hands-on DevSecOps implementation; it is not a security audit or guarantee that an application is vulnerability-free."
+    }
+  },
+  {
+    "title": "Less server. More possibility.",
+    "label": "AWS · Serverless",
+    "repo": "Serverless-Deployment",
+    "category": "cloud",
+    "desc": "A serverless web application connecting S3 and CloudFront hosting to an API Gateway and Lambda backend with DynamoDB storage.",
+    "tags": [
+      "AWS Lambda",
+      "API Gateway",
+      "DynamoDB",
+      "S3"
+    ],
+    "nodes": [
+      "CloudFront",
+      "Lambda",
+      "DynamoDB"
+    ],
+    "tone": "amber",
+    "detail": {
+      "focus": "Build a web application using managed AWS services rather than a traditional application server.",
+      "steps": [
+        "Host frontend files in S3 and distribute them with CloudFront.",
+        "Route application requests through API Gateway.",
+        "Handle requests with Lambda functions.",
+        "Persist application data in DynamoDB."
+      ],
+      "learn": "Connects static delivery, API routing, compute, and storage in a serverless architecture.",
+      "scope": "Project architecture and setup are documented in the repository. No current live-demo availability is assumed."
+    }
+  },
+  {
+    "title": "From commit to cluster.",
+    "label": "Containers · GitOps",
+    "repo": "DevOpsified-Complete-project",
+    "category": "delivery cloud",
+    "desc": "A containerized web application with GitHub Actions, Docker Hub, Kubernetes manifests, Helm packaging, and Argo CD deployment.",
+    "tags": [
+      "Docker",
+      "GitHub Actions",
+      "Helm",
+      "Argo CD"
+    ],
+    "nodes": [
+      "GitHub",
+      "Docker",
+      "K8s"
+    ],
+    "tone": "blue",
+    "detail": {
+      "focus": "Connect application changes to a container-based GitOps delivery workflow.",
+      "steps": [
+        "Package the application with Docker.",
+        "Automate image builds and publishing through GitHub Actions.",
+        "Define workloads using Kubernetes manifests and Helm.",
+        "Use Argo CD to sync deployment configuration."
+      ],
+      "learn": "Explores the boundary between CI builds and GitOps-driven deployment.",
+      "scope": "Repository includes configuration, setup steps, and troubleshooting guidance."
+    }
+  },
+  {
+    "title": "Small app. Real delivery.",
+    "label": "Team project · In development",
+    "repo": "cloud-todo-app",
+    "category": "delivery cloud",
+    "desc": "A team-built Node.js and Express task API with unit tests, Docker packaging, and a GitHub Actions pipeline configuration. DynamoDB integration is planned.",
+    "tags": [
+      "Node.js",
+      "Docker",
+      "GitHub Actions",
+      "REST API"
+    ],
+    "nodes": [
+      "Tests",
+      "Build",
+      "Package"
+    ],
+    "tone": "",
+    "detail": {
+      "focus": "Develop a cloud-ready task application as a team project, with an automated delivery foundation.",
+      "steps": [
+        "Implement a Node.js and Express REST API for task operations.",
+        "Add unit tests for application behavior.",
+        "Create a Dockerfile for consistent packaging.",
+        "Define GitHub Actions pipeline configuration."
+      ],
+      "learn": "Connects application development, testing, packaging, and CI configuration.",
+      "scope": "Team project with Neha Mishra and Ansh Pandit, guided by Prof. Natwar Jha. DynamoDB integration is planned, not presented as complete."
+    }
+  }
+]
